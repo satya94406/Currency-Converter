@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="outer_box">
+       <h1>Currency Converter</h1>
+      
+       <form id="currencyForm">
+           <div class="enter_amt">
+              <label>Enter Amount</label>
+              <input id="amount" type="number" min="1" value="">
+           </div>
+         
+           <div class="drop_down">
+              <div class="from">
+                 <p>From</p>
+                 <div class="select_container">
+                    <img id="from_flag" src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                    <select id="from_currency"></select>
+                 </div>
+              </div>
+
+              <div id="swap-icon">
+                <i class="fa-solid fa-right-left icon" ></i>
+              </div>
+
+              <div class="to">
+                 <p>To</p>
+                 <div class="select_container">
+                    <img id="to_flag" src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+                    <select id="to_currency"></select>
+                 </div>
+              </div>
+           </div>
+
+           <div class="msg" id="exchange_msg"></div>
+           <button type="submit" class="btn">Get Exchange Rate</button>
+       </form>
+    </div>
+
+    <script src="country_codes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
